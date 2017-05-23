@@ -1,0 +1,16 @@
+E:/gnu go/gnugo-3.8/utils/CMakeFiles/utils.dir
+E:/gnu go/gnugo-3.8/sgf/CMakeFiles/sgf.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/compress_fuseki.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/uncompress_fuseki.dir
+E:/gnu go/gnugo-3.8/sgf/CMakeFiles/sgfgen.dir
+E:/gnu go/gnugo-3.8/interface/CMakeFiles/gnugo.dir
+E:/gnu go/gnugo-3.8/engine/CMakeFiles/engine.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/patterns.dir
+E:/gnu go/gnugo-3.8/engine/CMakeFiles/board.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/extract_fuseki.dir
+E:/gnu go/gnugo-3.8/CMakeFiles/ALL_BUILD.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/joseki.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/mkeyes.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/mkmcpat.dir
+E:/gnu go/gnugo-3.8/CMakeFiles/ZERO_CHECK.dir
+E:/gnu go/gnugo-3.8/patterns/CMakeFiles/mkpat.dir

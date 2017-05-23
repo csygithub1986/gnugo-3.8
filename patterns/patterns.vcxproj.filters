@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\connections.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\transform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\apatterns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\dpatterns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\handipat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\influence.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\barriers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\endgame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fusekipat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\aa_attackpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\owl_vital_apat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\owl_attackpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\owl_defendpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fuseki9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fuseki13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fuseki19.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\josekidb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\patterns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\eyes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\mcpat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt" />
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\apatterns.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\dpatterns.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\handipat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\influence.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\barriers.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\endgame.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\conn.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fusekipat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\aa_attackpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\owl_vital_apat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\owl_attackpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\owl_defendpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fuseki9.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fuseki13.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fuseki19.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\gogo.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\hoshi_keima.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\hoshi_other.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\komoku.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\sansan.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\mokuhazushi.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\takamoku.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\josekidb.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\patterns.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\eyes.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\mcpat.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{92A84905-9BDD-37FF-8FA0-E72DC0AA8A9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CDA7AD23-9023-39AC-94FD-5C8E6D8DC628}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

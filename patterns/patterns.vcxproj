@@ -1,0 +1,1767 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2A7D50EA-6E28-32BA-95CB-4451D35550FD}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>patterns</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">patterns.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">patterns</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">patterns.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">patterns</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">patterns.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">patterns</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">patterns.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">patterns</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\gnu go\gnugo-3.8;E:\gnu go\gnugo-3.8\patterns;E:\gnu go\gnugo-3.8\engine;E:\gnu go\gnugo-3.8\sgf;E:\gnu go\gnugo-3.8\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HE:/gnu go/gnugo-3.8" "-BE:/gnu go/gnugo-3.8" --check-stamp-file "E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HE:/gnu go/gnugo-3.8" "-BE:/gnu go/gnugo-3.8" --check-stamp-file "E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HE:/gnu go/gnugo-3.8" "-BE:/gnu go/gnugo-3.8" --check-stamp-file "E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HE:/gnu go/gnugo-3.8" "-BE:/gnu go/gnugo-3.8" --check-stamp-file "E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/patterns/CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;E:\gnu go\gnugo-3.8\patterns\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\apatterns.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i "E:/gnu go/gnugo-3.8/patterns/attack.db" -o "E:/gnu go/gnugo-3.8/patterns/apatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/apatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i "E:/gnu go/gnugo-3.8/patterns/attack.db" -o "E:/gnu go/gnugo-3.8/patterns/apatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/apatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i "E:/gnu go/gnugo-3.8/patterns/attack.db" -o "E:/gnu go/gnugo-3.8/patterns/apatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/apatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating apatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -X attpat -i "E:/gnu go/gnugo-3.8/patterns/attack.db" -o "E:/gnu go/gnugo-3.8/patterns/apatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/apatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\attack.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\apatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\dpatterns.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe defpat -i "E:/gnu go/gnugo-3.8/patterns/defense.db" -o "E:/gnu go/gnugo-3.8/patterns/dpatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/dpatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe defpat -i "E:/gnu go/gnugo-3.8/patterns/defense.db" -o "E:/gnu go/gnugo-3.8/patterns/dpatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/dpatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe defpat -i "E:/gnu go/gnugo-3.8/patterns/defense.db" -o "E:/gnu go/gnugo-3.8/patterns/dpatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/dpatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating dpatterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe defpat -i "E:/gnu go/gnugo-3.8/patterns/defense.db" -o "E:/gnu go/gnugo-3.8/patterns/dpatterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/dpatterns.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\defense.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\dpatterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\handipat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i "E:/gnu go/gnugo-3.8/patterns/handicap.db" -o "E:/gnu go/gnugo-3.8/patterns/handipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/handipat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i "E:/gnu go/gnugo-3.8/patterns/handicap.db" -o "E:/gnu go/gnugo-3.8/patterns/handipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/handipat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i "E:/gnu go/gnugo-3.8/patterns/handicap.db" -o "E:/gnu go/gnugo-3.8/patterns/handipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/handipat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating handipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -b handipat -i "E:/gnu go/gnugo-3.8/patterns/handicap.db" -o "E:/gnu go/gnugo-3.8/patterns/handipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/handipat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\handicap.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\handipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\influence.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i "E:/gnu go/gnugo-3.8/patterns/influence.db" -o "E:/gnu go/gnugo-3.8/patterns/influence.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/influence.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i "E:/gnu go/gnugo-3.8/patterns/influence.db" -o "E:/gnu go/gnugo-3.8/patterns/influence.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/influence.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i "E:/gnu go/gnugo-3.8/patterns/influence.db" -o "E:/gnu go/gnugo-3.8/patterns/influence.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/influence.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating influence.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -c influencepat -i "E:/gnu go/gnugo-3.8/patterns/influence.db" -o "E:/gnu go/gnugo-3.8/patterns/influence.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/influence.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\influence.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\influence.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\barriers.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i "E:/gnu go/gnugo-3.8/patterns/barriers.db" -o "E:/gnu go/gnugo-3.8/patterns/barriers.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/barriers.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i "E:/gnu go/gnugo-3.8/patterns/barriers.db" -o "E:/gnu go/gnugo-3.8/patterns/barriers.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/barriers.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i "E:/gnu go/gnugo-3.8/patterns/barriers.db" -o "E:/gnu go/gnugo-3.8/patterns/barriers.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/barriers.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating barriers.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -c -b barrierspat -i "E:/gnu go/gnugo-3.8/patterns/barriers.db" -o "E:/gnu go/gnugo-3.8/patterns/barriers.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/barriers.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\barriers.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\barriers.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\endgame.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i "E:/gnu go/gnugo-3.8/patterns/endgame.db" -o "E:/gnu go/gnugo-3.8/patterns/endgame.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/endgame.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i "E:/gnu go/gnugo-3.8/patterns/endgame.db" -o "E:/gnu go/gnugo-3.8/patterns/endgame.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/endgame.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i "E:/gnu go/gnugo-3.8/patterns/endgame.db" -o "E:/gnu go/gnugo-3.8/patterns/endgame.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/endgame.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating endgame.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -b endpat -i "E:/gnu go/gnugo-3.8/patterns/endgame.db" -o "E:/gnu go/gnugo-3.8/patterns/endgame.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/endgame.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\endgame.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\endgame.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\conn.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -c conn -i "E:/gnu go/gnugo-3.8/patterns/conn.db" -o "E:/gnu go/gnugo-3.8/patterns/conn.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/conn.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -c conn -i "E:/gnu go/gnugo-3.8/patterns/conn.db" -o "E:/gnu go/gnugo-3.8/patterns/conn.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/conn.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -c conn -i "E:/gnu go/gnugo-3.8/patterns/conn.db" -o "E:/gnu go/gnugo-3.8/patterns/conn.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/conn.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating conn.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -c conn -i "E:/gnu go/gnugo-3.8/patterns/conn.db" -o "E:/gnu go/gnugo-3.8/patterns/conn.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/conn.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\conn.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\conn.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fusekipat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i "E:/gnu go/gnugo-3.8/patterns/fuseki.db" -o "E:/gnu go/gnugo-3.8/patterns/fusekipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fusekipat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i "E:/gnu go/gnugo-3.8/patterns/fuseki.db" -o "E:/gnu go/gnugo-3.8/patterns/fusekipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fusekipat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i "E:/gnu go/gnugo-3.8/patterns/fuseki.db" -o "E:/gnu go/gnugo-3.8/patterns/fusekipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fusekipat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating fusekipat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -b fusekipat -i "E:/gnu go/gnugo-3.8/patterns/fuseki.db" -o "E:/gnu go/gnugo-3.8/patterns/fusekipat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fusekipat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\fuseki.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\fusekipat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\aa_attackpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.dtr" aa_attackpat -i "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/aa_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/aa_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.db;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.dtr" aa_attackpat -i "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/aa_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/aa_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.db;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.dtr" aa_attackpat -i "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/aa_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/aa_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.db;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating aa_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.dtr" aa_attackpat -i "E:/gnu go/gnugo-3.8/patterns/aa_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/aa_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/aa_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.db;E:\gnu go\gnugo-3.8\patterns\aa_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\aa_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\owl_vital_apat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.dtr" owl_vital_apat -i "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_vital_apat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_vital_apat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.db;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.dtr" owl_vital_apat -i "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_vital_apat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_vital_apat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.db;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.dtr" owl_vital_apat -i "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_vital_apat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_vital_apat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.db;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating owl_vital_apat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.dtr" owl_vital_apat -i "E:/gnu go/gnugo-3.8/patterns/owl_vital_apats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_vital_apat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_vital_apat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.db;E:\gnu go\gnugo-3.8\patterns\owl_vital_apats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_vital_apat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\owl_attackpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.dtr" owl_attackpat -i "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.db;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.dtr" owl_attackpat -i "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.db;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.dtr" owl_attackpat -i "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.db;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating owl_attackpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.dtr" owl_attackpat -i "E:/gnu go/gnugo-3.8/patterns/owl_attackpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_attackpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_attackpat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.db;E:\gnu go\gnugo-3.8\patterns\owl_attackpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_attackpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\owl_defendpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.dtr" owl_defendpat -i "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_defendpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_defendpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.db;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.dtr" owl_defendpat -i "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_defendpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_defendpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.db;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.dtr" owl_defendpat -i "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_defendpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_defendpat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.db;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating owl_defendpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -D -m -b -t "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.dtr" owl_defendpat -i "E:/gnu go/gnugo-3.8/patterns/owl_defendpats.db" -o "E:/gnu go/gnugo-3.8/patterns/owl_defendpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/owl_defendpat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.db;E:\gnu go\gnugo-3.8\patterns\owl_defendpats.dtr;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\owl_defendpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fuseki9.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 "E:/gnu go/gnugo-3.8/patterns/fuseki9.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki9.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki9.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 "E:/gnu go/gnugo-3.8/patterns/fuseki9.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki9.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki9.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 "E:/gnu go/gnugo-3.8/patterns/fuseki9.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki9.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki9.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating fuseki9.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 9 "E:/gnu go/gnugo-3.8/patterns/fuseki9.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki9.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki9.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki9.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki9.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fuseki13.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 "E:/gnu go/gnugo-3.8/patterns/fuseki13.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki13.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki13.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 "E:/gnu go/gnugo-3.8/patterns/fuseki13.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki13.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki13.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 "E:/gnu go/gnugo-3.8/patterns/fuseki13.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki13.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki13.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating fuseki13.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 13 "E:/gnu go/gnugo-3.8/patterns/fuseki13.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki13.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki13.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki13.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki13.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\fuseki19.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 "E:/gnu go/gnugo-3.8/patterns/fuseki19.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki19.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki19.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 "E:/gnu go/gnugo-3.8/patterns/fuseki19.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki19.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki19.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 "E:/gnu go/gnugo-3.8/patterns/fuseki19.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki19.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki19.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating fuseki19.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\uncompress_fuseki.exe 19 "E:/gnu go/gnugo-3.8/patterns/fuseki19.dbz" c &gt; "E:/gnu go/gnugo-3.8/patterns/fuseki19.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/fuseki19.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\uncompress_fuseki.exe;E:\gnu go\gnugo-3.8\patterns\fuseki19.dbz;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\fuseki19.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\gogo.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JG "E:/gnu go/gnugo-3.8/patterns/gogo.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/gogo.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/gogo.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JG "E:/gnu go/gnugo-3.8/patterns/gogo.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/gogo.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/gogo.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JG "E:/gnu go/gnugo-3.8/patterns/gogo.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/gogo.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/gogo.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating gogo.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JG "E:/gnu go/gnugo-3.8/patterns/gogo.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/gogo.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/gogo.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\gogo.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\gogo.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\hoshi_keima.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JHK "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_keima.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JHK "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_keima.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JHK "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_keima.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating hoshi_keima.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JHK "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_keima.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\hoshi_other.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JHO "E:/gnu go/gnugo-3.8/patterns/hoshi_other.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_other.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JHO "E:/gnu go/gnugo-3.8/patterns/hoshi_other.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_other.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JHO "E:/gnu go/gnugo-3.8/patterns/hoshi_other.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_other.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating hoshi_other.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JHO "E:/gnu go/gnugo-3.8/patterns/hoshi_other.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/hoshi_other.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\hoshi_other.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\hoshi_other.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\komoku.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JK "E:/gnu go/gnugo-3.8/patterns/komoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/komoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/komoku.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JK "E:/gnu go/gnugo-3.8/patterns/komoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/komoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/komoku.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JK "E:/gnu go/gnugo-3.8/patterns/komoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/komoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/komoku.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating komoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JK "E:/gnu go/gnugo-3.8/patterns/komoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/komoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/komoku.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\komoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\komoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\sansan.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JS "E:/gnu go/gnugo-3.8/patterns/sansan.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/sansan.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/sansan.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JS "E:/gnu go/gnugo-3.8/patterns/sansan.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/sansan.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/sansan.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JS "E:/gnu go/gnugo-3.8/patterns/sansan.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/sansan.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/sansan.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating sansan.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JS "E:/gnu go/gnugo-3.8/patterns/sansan.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/sansan.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/sansan.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\sansan.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\sansan.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\mokuhazushi.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JM "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mokuhazushi.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JM "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mokuhazushi.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JM "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mokuhazushi.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating mokuhazushi.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JM "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mokuhazushi.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\takamoku.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\joseki.exe JT "E:/gnu go/gnugo-3.8/patterns/takamoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/takamoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/takamoku.db.rule;E:\gnu go\gnugo-3.8\patterns\Debug\joseki.exe;E:\gnu go\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\joseki.exe JT "E:/gnu go/gnugo-3.8/patterns/takamoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/takamoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/takamoku.db.rule;E:\gnu go\gnugo-3.8\patterns\Release\joseki.exe;E:\gnu go\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\joseki.exe JT "E:/gnu go/gnugo-3.8/patterns/takamoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/takamoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/takamoku.db.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\joseki.exe;E:\gnu go\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating takamoku.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\joseki.exe JT "E:/gnu go/gnugo-3.8/patterns/takamoku.sgf" &gt; "E:/gnu go/gnugo-3.8/patterns/takamoku.db"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/takamoku.db.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\joseki.exe;E:\gnu go\gnugo-3.8\patterns\takamoku.sgf;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\takamoku.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\josekidb.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i "E:/gnu go/gnugo-3.8/patterns/gogo.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db" -i "E:/gnu go/gnugo-3.8/patterns/komoku.db" -i "E:/gnu go/gnugo-3.8/patterns/sansan.db" -i "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db" -i "E:/gnu go/gnugo-3.8/patterns/takamoku.db" -o "E:/gnu go/gnugo-3.8/patterns/josekidb.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/josekidb.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\gogo.db;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db;E:\gnu go\gnugo-3.8\patterns\hoshi_other.db;E:\gnu go\gnugo-3.8\patterns\komoku.db;E:\gnu go\gnugo-3.8\patterns\sansan.db;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db;E:\gnu go\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i "E:/gnu go/gnugo-3.8/patterns/gogo.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db" -i "E:/gnu go/gnugo-3.8/patterns/komoku.db" -i "E:/gnu go/gnugo-3.8/patterns/sansan.db" -i "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db" -i "E:/gnu go/gnugo-3.8/patterns/takamoku.db" -o "E:/gnu go/gnugo-3.8/patterns/josekidb.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/josekidb.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\gogo.db;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db;E:\gnu go\gnugo-3.8\patterns\hoshi_other.db;E:\gnu go\gnugo-3.8\patterns\komoku.db;E:\gnu go\gnugo-3.8\patterns\sansan.db;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db;E:\gnu go\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i "E:/gnu go/gnugo-3.8/patterns/gogo.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db" -i "E:/gnu go/gnugo-3.8/patterns/komoku.db" -i "E:/gnu go/gnugo-3.8/patterns/sansan.db" -i "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db" -i "E:/gnu go/gnugo-3.8/patterns/takamoku.db" -o "E:/gnu go/gnugo-3.8/patterns/josekidb.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/josekidb.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\gogo.db;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db;E:\gnu go\gnugo-3.8\patterns\hoshi_other.db;E:\gnu go\gnugo-3.8\patterns\komoku.db;E:\gnu go\gnugo-3.8\patterns\sansan.db;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db;E:\gnu go\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating josekidb.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -C joseki -i "E:/gnu go/gnugo-3.8/patterns/gogo.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_keima.db" -i "E:/gnu go/gnugo-3.8/patterns/hoshi_other.db" -i "E:/gnu go/gnugo-3.8/patterns/komoku.db" -i "E:/gnu go/gnugo-3.8/patterns/sansan.db" -i "E:/gnu go/gnugo-3.8/patterns/mokuhazushi.db" -i "E:/gnu go/gnugo-3.8/patterns/takamoku.db" -o "E:/gnu go/gnugo-3.8/patterns/josekidb.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/josekidb.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\gogo.db;E:\gnu go\gnugo-3.8\patterns\hoshi_keima.db;E:\gnu go\gnugo-3.8\patterns\hoshi_other.db;E:\gnu go\gnugo-3.8\patterns\komoku.db;E:\gnu go\gnugo-3.8\patterns\sansan.db;E:\gnu go\gnugo-3.8\patterns\mokuhazushi.db;E:\gnu go\gnugo-3.8\patterns\takamoku.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\josekidb.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\patterns.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkpat.exe -b pat -i "E:/gnu go/gnugo-3.8/patterns/patterns.db" -i "E:/gnu go/gnugo-3.8/patterns/patterns2.db" -o "E:/gnu go/gnugo-3.8/patterns/patterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/patterns.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\patterns.db;E:\gnu go\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkpat.exe -b pat -i "E:/gnu go/gnugo-3.8/patterns/patterns.db" -i "E:/gnu go/gnugo-3.8/patterns/patterns2.db" -o "E:/gnu go/gnugo-3.8/patterns/patterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/patterns.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\patterns.db;E:\gnu go\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkpat.exe -b pat -i "E:/gnu go/gnugo-3.8/patterns/patterns.db" -i "E:/gnu go/gnugo-3.8/patterns/patterns2.db" -o "E:/gnu go/gnugo-3.8/patterns/patterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/patterns.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\patterns.db;E:\gnu go\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating patterns.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkpat.exe -b pat -i "E:/gnu go/gnugo-3.8/patterns/patterns.db" -i "E:/gnu go/gnugo-3.8/patterns/patterns2.db" -o "E:/gnu go/gnugo-3.8/patterns/patterns.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/patterns.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkpat.exe;E:\gnu go\gnugo-3.8\patterns\patterns.db;E:\gnu go\gnugo-3.8\patterns\patterns2.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\patterns.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\eyes.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkeyes.exe &lt; "E:/gnu go/gnugo-3.8/patterns/eyes.db" &gt; "E:/gnu go/gnugo-3.8/patterns/eyes.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/eyes.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkeyes.exe;E:\gnu go\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkeyes.exe &lt; "E:/gnu go/gnugo-3.8/patterns/eyes.db" &gt; "E:/gnu go/gnugo-3.8/patterns/eyes.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/eyes.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkeyes.exe;E:\gnu go\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkeyes.exe &lt; "E:/gnu go/gnugo-3.8/patterns/eyes.db" &gt; "E:/gnu go/gnugo-3.8/patterns/eyes.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/eyes.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkeyes.exe;E:\gnu go\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating eyes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkeyes.exe &lt; "E:/gnu go/gnugo-3.8/patterns/eyes.db" &gt; "E:/gnu go/gnugo-3.8/patterns/eyes.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/eyes.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkeyes.exe;E:\gnu go\gnugo-3.8\patterns\eyes.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\eyes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\gnu go\gnugo-3.8\CMakeFiles\f28ae9c9db7a74b79f24a86fe5b0cf22\mcpat.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+$(Configuration)\mkmcpat.exe "E:/gnu go/gnugo-3.8/patterns/mc_montegnu_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_mogo_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_uniform.db" &gt; "E:/gnu go/gnugo-3.8/patterns/mcpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mcpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Debug\mkmcpat.exe;E:\gnu go\gnugo-3.8\patterns\mkmcpat.c;E:\gnu go\gnugo-3.8\patterns\mc_montegnu_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_mogo_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\gnu go\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+$(Configuration)\mkmcpat.exe "E:/gnu go/gnugo-3.8/patterns/mc_montegnu_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_mogo_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_uniform.db" &gt; "E:/gnu go/gnugo-3.8/patterns/mcpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mcpat.c.rule;E:\gnu go\gnugo-3.8\patterns\Release\mkmcpat.exe;E:\gnu go\gnugo-3.8\patterns\mkmcpat.c;E:\gnu go\gnugo-3.8\patterns\mc_montegnu_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_mogo_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\gnu go\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+$(Configuration)\mkmcpat.exe "E:/gnu go/gnugo-3.8/patterns/mc_montegnu_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_mogo_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_uniform.db" &gt; "E:/gnu go/gnugo-3.8/patterns/mcpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mcpat.c.rule;E:\gnu go\gnugo-3.8\patterns\MinSizeRel\mkmcpat.exe;E:\gnu go\gnugo-3.8\patterns\mkmcpat.c;E:\gnu go\gnugo-3.8\patterns\mc_montegnu_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_mogo_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\gnu go\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating mcpat.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+$(Configuration)\mkmcpat.exe "E:/gnu go/gnugo-3.8/patterns/mc_montegnu_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_mogo_classic.db" "E:/gnu go/gnugo-3.8/patterns/mc_uniform.db" &gt; "E:/gnu go/gnugo-3.8/patterns/mcpat.c"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/gnu go/gnugo-3.8/CMakeFiles/f28ae9c9db7a74b79f24a86fe5b0cf22/mcpat.c.rule;E:\gnu go\gnugo-3.8\patterns\RelWithDebInfo\mkmcpat.exe;E:\gnu go\gnugo-3.8\patterns\mkmcpat.c;E:\gnu go\gnugo-3.8\patterns\mc_montegnu_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_mogo_classic.db;E:\gnu go\gnugo-3.8\patterns\mc_uniform.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\gnu go\gnugo-3.8\patterns\mcpat.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\connections.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\helpers.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\transform.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\apatterns.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\dpatterns.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\handipat.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\influence.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\barriers.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\endgame.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\conn.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fusekipat.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\aa_attackpat.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\owl_vital_apat.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\owl_attackpat.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\owl_defendpat.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fuseki9.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fuseki13.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\fuseki19.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\josekidb.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\patterns.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\eyes.c"  />
+    <ClCompile Include="E:\gnu go\gnugo-3.8\patterns\mcpat.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/gnu go/gnugo-3.8/ZERO_CHECK.vcxproj">
+      <Project>4B0E06CF-50EF-30C9-B94C-6C0362C69A76</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/gnu go/gnugo-3.8/patterns/joseki.vcxproj">
+      <Project>4D893842-A76A-32F1-AF39-29C32E107EF5</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/gnu go/gnugo-3.8/patterns/mkeyes.vcxproj">
+      <Project>F710B427-3DF4-3A48-98B0-F88DC4D00E08</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/gnu go/gnugo-3.8/patterns/mkmcpat.vcxproj">
+      <Project>B57F9832-0D4D-3A33-BF74-B861223339FD</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/gnu go/gnugo-3.8/patterns/mkpat.vcxproj">
+      <Project>D9FB7CC9-192F-34C0-806D-8C4A6D204D5D</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/gnu go/gnugo-3.8/patterns/uncompress_fuseki.vcxproj">
+      <Project>28D5956C-D3A1-33A9-B081-3DD4543A7372</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
