@@ -2,4 +2,9 @@ LIBRARY gnugo
 EXPORTS 
 Start @1
 init_gnugo @2 
+sgftree_readfile @3
+writesgf @4
+sgftreeAddStone @5
+
+
 

@@ -9,7 +9,8 @@ extern "C" {
 
 int main()
 {
-	Start(1, NULL);
+	//SGFNode *node = readsgffile("E:\abc.sgf");
+	//sgftreeAddStone(node->)
 	return 0;
 }
 
